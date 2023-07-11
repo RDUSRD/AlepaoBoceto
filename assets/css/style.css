@@ -211,16 +211,34 @@ button[type="submit"]:hover {
 .card-deck {
   margin: 100px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 35px auto;
+  max-width: 1200px;
 }
 
 .card {
   background-color: white;
-  margin: 0 10px;
+  margin: 20px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  justify-content: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
 .card h2 {
@@ -231,39 +249,33 @@ button[type="submit"]:hover {
   font-family: sans-serif;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.63);
-}
-
-.card-img-top {
-  width: 10.8em;
-  height: 15vw;
+.card p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.3;
+  font-family: sans-serif;
   margin-bottom: 1em;
-  border-radius: 10%;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-text {
-  margin-bottom: 1em;
-  justify-content: center;
-}
-
-/* Estilos de boton de cartas */
-.btn.btn-primary {
-  background-color: rgb(6, 102, 6);
-  color: black;
+.card button {
+  background-color: rgb(25, 168, 25);
+  color: rgb(0, 0, 0);
   border-color: black;
   border: 15%;
   border-radius: 10%;
-  font-weight: bold;
   position: absolute;
-  margin-top: 4.5%;
-  height: 3%;
-  width: 4%;
+  bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5em;
+  width: 3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: rgb(0, 128, 0);
+  color: white;
+  cursor: pointer;
 }
