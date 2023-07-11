@@ -70,18 +70,6 @@
   padding: 1em 0;
 }
 
-.content-big {
-  background-color: white;
-  padding: 20px;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  position: relative;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  max-width: 80%;
-}
-
 .content-info {
   background-color: white;
   padding: 20px;
@@ -116,10 +104,20 @@
   margin: 3em 0 3em 0;
 }
 
-.content-img img{
+.content-img img {
   margin: 0 0.5em 0 0.5em;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.content-img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 /* Estilos para formulario */
 .content-form-contact {
   background-color: white;
