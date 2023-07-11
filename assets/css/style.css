@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Estilos para el navbar */
+.navbar {
+  overflow: hidden;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  margin: 10px;
+}
+
+.navbar a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #272727;
+  color: rgb(248, 245, 245);
+}
+
+/* Estilos para el título */
+.title {
+  text-align: center;
+  position: relative;
+}
+
+.title img {
+  display: block;
+  margin: 0 auto;
+  width: 15%; /* Cambia el valor según el tamaño deseado */
+}
+
+.title h1 {
+  font-size: 3em; /* Cambia el valor según el tamaño deseado */
+  font-weight: bold;
+}
+
+/* Estilos para el contenido */
+.content {
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  padding: 1em 0;
+}
+
+.content-big {
+  background-color: white;
+  padding: 20px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  max-width: 80%;
+}
+
+.content-info {
+  background-color: white;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  max-width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.content-info p {
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Estilos para imagenes */
+.content-img {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 15%;
+  left: 10%;
+  right: 10%;
+  max-width: 80%;
+  margin: 3em 0 3em 0;
+}
+
+.content-img img{
+  margin: 0 0.5em 0 0.5em;
+}
+
+/* Estilos para formulario */
+.content-form-contact {
+  background-color: white;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  max-width: 80%;
+  font-size: 1.5em;
+  text-align: justify;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-form-contact h3 {
+  margin-bottom: 1em;
+}
+
+.form-group {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  margin-bottom: 0.5em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5em;
+  border: none;
+  border-bottom: 2px solid gray;
+  width: 100%;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-bottom: 2px solid green;
+}
+
+/* Estilo boton de enviar */
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+/* Estilos de footer */
+.footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  text-align: center;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add this line to add a box shadow */
+}
+
+.footer a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/* Estilos de cartas */
+.card-deck {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: white;
+  margin: 0 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.63);
+}
+
+.card-img-top {
+  width: 10.8em;
+  height: 15vw;
+  margin-bottom: 1em;
+  border-radius: 10%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text {
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+/* Estilos de boton de cartas */
+.btn.btn-primary {
+  background-color: rgb(6, 102, 6);
+  color: black;
+  border-color: black;
+  border: 15%;
+  border-radius: 10%;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 4.5%;
+  height: 3%;
+  width: 4%;
+}
